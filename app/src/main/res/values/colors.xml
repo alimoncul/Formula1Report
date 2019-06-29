@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6270bf</color>
+    <color name="colorPrimaryDark">#3d457e</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorWhite">#fff</color>
+    <color name="colorGrey">#9c9c9c</color>
+    <color name="colorGrey2">#616161</color>
+    <color name="colorBlack">#000000</color>
+    <color name="tabs">#203A43</color>
+    <color name="appbar">#455A64</color>
+
+    <!--Tyre Colors-->
+    <color name="hypersoft">#d61aad</color>
+    <color name="ultrasoft">#8e0971</color>
+    <color name="supersoft">#a70306</color>
+    <color name="soft">#ded715</color>
+    <color name="medium">#e1dbe0</color>
+    <color name="hard">#4d54e2</color>
+    <color name="superhard">#ce7603</color>
+
+    <!--Main Screen Colors-->
+    <color name="colorUpcoming">#CDDC39</color>
+    <color name="colorUpcomingClicked">#788121</color>
+
+    <color name="colorGlue">#FF5722</color>
+    <color name="colorGlueClicked">#7b2910</color>
+
+    <color name="colorTape">#9C27B0</color>
+    <color name="colorTapeClicked">#50145b</color>
+
+    <color name="colorGumi">#3F51B5</color>
+    <color name="colorGumiClicked">#1f2859</color>
+
+
+    <!--Extra Activity Colors-->
+    <color name="colorRaceResults">#26a69a</color>
+    <color name="colorRaceResultsClicked">#155953</color>
+
+    <color name="colorQualifyingResults">#66bb6a</color>
+    <color name="colorQualifyingResultsClicked">#3d7040</color>
+
+    <color name="colorgetStandings">#ca672a</color>
+    <color name="colorgetStandingsClicked">#6c3716</color>
+
+    <!--Team Colors-->
+    <color name="colorFerrari">#5fff0011</color>
+    <color name="colorMercedes">#5f2f9b6e</color>
+    <color name="colorRedbull">#5e00084e</color>
+    <color name="colorRenault">#5ffbff00</color>
+    <color name="colorHaasF1Team">#5f353638</color>
+    <color name="colorForceIndia">#5fb301a1</color>
+    <color name="colorMcLaren">#5fffa200</color>
+    <color name="colorToroRosso">#5f222be1</color>
+    <color name="colorSauber">#5f71110e</color>
+    <color name="colorWilliams">#5fb9b9b9</color>
+
+</resources>

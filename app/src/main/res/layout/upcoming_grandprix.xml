@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+    <ImageView
+        android:id="@+id/iv_grandPrixImg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:src="@drawable/canadian_grand_prix"
+        app:layout_constraintEnd_toEndOf="@id/tv_name"
+        app:layout_constraintTop_toBottomOf="@id/tv_name"
+        app:layout_constraintHorizontal_bias="0.5"/>
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:fontFamily="@font/yanoneregular"
+        android:padding="4dp"
+        android:background="@drawable/upcoming_name_background"
+        android:text="United States Grand Prix"
+        android:textColor="@color/colorWhite"
+        android:textSize="26dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_round"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/upcoming_round_triangle"
+        android:gravity="center"
+        android:padding="5dp"
+        android:fontFamily="@font/dosis"
+        android:textStyle="bold"
+        android:text="ROUND 7 of 21"
+        android:textColor="@color/colorWhite"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_grandPrixImg" />
+
+    <TextView
+        android:id="@+id/placeholder_laps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_marginLeft="4dp"
+        android:layout_marginStart="4dp"
+        android:text="Laps"
+        android:textColor="@color/colorBlack"
+        android:textSize="14dp"
+        app:layout_constraintBottom_toBottomOf="@+id/placeholder_laps_icon"
+        app:layout_constraintStart_toEndOf="@+id/placeholder_laps_icon"
+        app:layout_constraintTop_toTopOf="@+id/placeholder_laps_icon" />
+
+    <TextView
+        android:id="@+id/TVplaceholder_last_pole"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_marginStart="4dp"
+        android:text="Last Pole Position"
+        android:textColor="@color/colorBlack"
+        android:textSize="14dp"
+        app:layout_constraintStart_toEndOf="@+id/placeholder_pole_position"
+        app:layout_constraintTop_toTopOf="@+id/placeholder_pole_position" />
+
+    <ImageView
+        android:id="@+id/placeholder_laps_icon"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/icon_laps"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_round" />
+
+    <TextView
+        android:id="@+id/placeholder_length"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginStart="4dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Track Length"
+        android:textColor="@color/colorBlack"
+        android:textSize="14dp"
+        app:layout_constraintBottom_toBottomOf="@+id/placeholder_laps_length"
+        app:layout_constraintStart_toEndOf="@+id/placeholder_laps_length"
+        app:layout_constraintTop_toTopOf="@+id/placeholder_laps_length" />
+
+    <ImageView
+        android:id="@+id/placeholder_laps_length"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/icon_length"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/tv_round" />
+
+    <ImageView
+        android:id="@+id/placeholder_pole_position"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/icon_pole"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/placeholder_laps_icon" />
+
+    <TextView
+        android:id="@+id/tv_laps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="57"
+        android:textColor="@color/colorBlack"
+        android:fontFamily="sans-serif-condensed"
+        android:textSize="12dp"
+        app:layout_constraintStart_toStartOf="@+id/placeholder_laps"
+        app:layout_constraintTop_toBottomOf="@+id/placeholder_laps" />
+
+    <TextView
+        android:id="@+id/tv_last_pole"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Lewis Hamilton - Mercedes - 1:21:164"
+        android:textColor="@color/colorBlack"
+        android:textSize="12dp"
+        app:layout_constraintStart_toStartOf="@+id/TVplaceholder_last_pole"
+        app:layout_constraintTop_toBottomOf="@+id/TVplaceholder_last_pole" />
+
+    <TextView
+        android:id="@+id/tv_length"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed"
+        android:text="7.004 km"
+        android:textColor="@color/colorBlack"
+        android:textSize="12dp"
+        app:layout_constraintStart_toStartOf="@+id/placeholder_length"
+        app:layout_constraintTop_toBottomOf="@+id/placeholder_length" />
+
+    <cn.iwgang.countdownview.CountdownView
+        android:id="@+id/countDown"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/upcoming_timer_background"
+        android:padding="10dp"
+        app:isHideTimeBackground="true"
+        app:isShowDay="true"
+        app:isShowHour="true"
+        app:isShowMillisecond="false"
+        app:isShowMinute="true"
+        app:isShowSecond="true"
+        app:isTimeTextBold="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:suffixDay="days"
+        app:suffixGravity="bottom"
+        app:suffixHour="hours"
+        app:suffixMillisecond="ms"
+        app:suffixMinute="minutes"
+        app:suffixSecond="seconds"
+        app:suffixTextColor="#ffffff"
+        app:suffixTextSize="10dp"
+        app:timeTextColor="#ffff00"
+        app:timeTextSize="20dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.50" />
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="10dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/placeholder_pole_position">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_free_practice_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="4dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/upcoming_event_ruler" />
+
+            <TextView
+                android:id="@+id/tv_label_free_practice_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="Free Practice 1"
+                android:textColor="@color/colorBlack"
+                android:textSize="16dp"
+                app:layout_constraintStart_toEndOf="@+id/iv_free_practice_one"
+                app:layout_constraintTop_toTopOf="@+id/iv_free_practice_one" />
+
+            <TextView
+                android:id="@+id/free_practice_one_time"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="right"
+                android:text="14.00 UTC"
+                android:textColor="@color/colorBlack"
+                android:textSize="16dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/free_practice_one_date"
+                android:layout_width="377dp"
+                android:layout_height="19dp"
+                android:layout_gravity="center"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="left"
+                android:text="23rd September"
+                android:textColor="@color/colorBlack"
+                android:textSize="16dp"
+                app:layout_constraintBottom_toBottomOf="@+id/iv_free_practice_one"
+                app:layout_constraintStart_toStartOf="@+id/tv_label_free_practice_one" />
+
+        </android.support.constraint.ConstraintLayout>
+    </android.support.v7.widget.CardView>
+
+
+
+
+</android.support.constraint.ConstraintLayout>
+
+

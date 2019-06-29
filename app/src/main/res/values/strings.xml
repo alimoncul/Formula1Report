@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Formula 1 Report</string>
+    <string name="upcoming">UPCOMING</string>
+    <string name="standings">STANDINGS</string>
+    <string name="results">RESULTS</string>
+    <string name="extras">EXTRAS</string>
+    <string name="title_activity_standing">StandingActivity</string>
+</resources>

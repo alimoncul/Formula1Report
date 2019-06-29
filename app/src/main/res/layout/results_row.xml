@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        app:cardCornerRadius="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="3dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:innerRadius="0dp"
+        android:shape="ring"
+        android:thicknessRatio="4"
+        android:layout_height="wrap_content">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:id="@+id/constraintResult"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_labelPositionBackground"
+                android:layout_width="49dp"
+                android:layout_height="92dp"
+                android:background="@drawable/result_position_background"
+                android:gravity="center_vertical|center_horizontal"
+                android:textColor="@color/colorBlack"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/tv_position_race"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/iv_labelPointBackground"
+                android:layout_width="75dp"
+                android:layout_height="92dp"
+                android:background="@drawable/result_points_background"
+                android:gravity="center_vertical|center_horizontal"
+                android:textColor="@color/colorBlack"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_position_race"
+                android:layout_width="42dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="01"
+                android:textColor="@color/colorWhite"
+                android:textSize="40dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_points_race"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed"
+                android:text="25"
+                android:textColor="@color/colorWhite"
+                android:textSize="40dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/tv_labelPoints"
+                app:layout_constraintStart_toStartOf="@+id/tv_labelPoints"
+                app:layout_constraintTop_toBottomOf="@+id/tv_labelPoints" />
+
+            <TextView
+                android:id="@+id/tv_labelDriver"
+                android:layout_width="wrap_content"
+                android:layout_height="16dp"
+                android:fontFamily="sans-serif-condensed"
+                android:textColor="@color/colorGrey2"
+                android:text="Driver"
+                android:textSize="12dp"
+                app:layout_constraintBottom_toTopOf="@+id/tv_drivername_race"
+                app:layout_constraintStart_toStartOf="@+id/tv_drivername_race"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_labelPoints"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="24dp"
+                android:layout_marginRight="24dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="Points"
+                android:textColor="@color/colorWhite"
+                android:textSize="12dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_labelConstructor"
+                android:layout_width="wrap_content"
+                android:layout_height="16dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="Constructor"
+                android:textColor="@color/colorGrey2"
+                android:textSize="12dp"
+                app:layout_constraintStart_toStartOf="@+id/tv_drivername_race"
+                app:layout_constraintTop_toBottomOf="@+id/tv_drivername_race" />
+
+            <TextView
+                android:id="@+id/tv_drivername_race"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="Sebastian Vettel"
+                android:textColor="@color/colorBlack"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/tv_position_race"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_constructorname_race"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed"
+                android:text="Haas F1 Team"
+                android:textColor="@color/colorBlack"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/tv_labelConstructor"
+                app:layout_constraintTop_toBottomOf="@+id/tv_labelConstructor" />
+
+        </android.support.constraint.ConstraintLayout>
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>
